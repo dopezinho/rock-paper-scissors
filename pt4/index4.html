@@ -61,14 +61,19 @@
         Reset Score
       </button>
       <p>Shipping Calculator</p>
-      <input
-        placeholder="custo do balaio"
-        type="number"
-        class="custo-input"
-        onkeydown="calculaEnter(event)"
-      />
-      <button onclick="calcula()">Calculare</button>
-      <h3 class="custo-total"></h3>
+      <div class="calculando">
+        <input
+          placeholder="balaio"
+          type="number"
+          class="custo-input"
+          onkeydown="calculaEnter(event)"
+        />
+        <button onclick="calcula()">Calculare</button>
+      </div>
+      <div class="calculando-total">
+        <h2>Total:</h2>
+        <h2 class="custo-total">$0</h2>
+      </div>
     </main>
     <footer>
       <a href="../pt2/index2.html">go to pt2</a>
