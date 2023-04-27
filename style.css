@@ -17,26 +17,21 @@ body {
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 h1 {
-    font-size: 40px;
-    margin: 20px 0;
+    font-size: 3rem;
+    margin: 10px 0 60px 0;
     text-align: center;
 }
 
 button {
-    border: 1px solid transparent;
-    border-radius: 10px;
-    font-size: 20px;
-    margin: 100px 5px;
-    padding: 20px 10px;
-}
-
-button:hover {
-    border: 1px solid #38e715;
-    cursor: pointer;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    margin: 20px 0;
+    padding: 20px 0;
 }
 
 footer {
@@ -45,13 +40,20 @@ footer {
 }
 
 a {
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: 300;
-    margin: 15px;
+    margin: 5px;
+    padding: 20px 10px;
     text-transform: uppercase;
     text-decoration: none;
 }
 
 a:hover {
     color: #38e715;
+}
+
+p {
+    color: #c59dde;
+    font-weight: 600;
+    font-size: 2.3rem;
 }
