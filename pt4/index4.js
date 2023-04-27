@@ -1,5 +1,24 @@
 document.title = "D.O.Miniqueniquenique";
 
+// Calculatora
+
+function calculaEnter(event) {
+  if (event.key === "Enter") {
+    calcula();
+  }
+}
+
+function calcula() {
+  const inputElemento = document.querySelector(".custo-input");
+  let custo = Number(inputElemento.value);
+
+  if (custo < 40) {
+    custo = custo + 10;
+  }
+
+  document.querySelector(".custo-total").innerHTML = `$${custo}`;
+}
+
 // YT Subs Butt
 
 function sinscreveBotaum() {
