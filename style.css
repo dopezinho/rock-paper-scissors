@@ -78,3 +78,42 @@ p {
     display: flex;
     flex-direction: column;
 }
+
+/* RPS SCORE */
+
+.rps-match {
+    display: flex;
+}
+
+.rps-match h2 {
+    margin: 10px 20px;
+}
+
+.player-match, .computer-match, .result-match {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    text-transform: lowercase;
+}
+
+.player-match h3, .computer-match h3, .result-match h3 {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.rps-all {
+    display: flex;
+    text-transform: uppercase;
+}
+
+.rps-all h2 {
+    font-size: 1.5rem;
+    margin: 5px 20px;
+}
+
+.rps-wlt {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}

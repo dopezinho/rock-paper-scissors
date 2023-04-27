@@ -19,6 +19,8 @@ let score = JSON.parse(localStorage.getItem("score")) || {
   ties: 0,
 };
 
+updateScoreElement();
+
 function playGame(playerMove) {
   const computerMove = pickComputerMove();
 
@@ -26,44 +28,51 @@ function playGame(playerMove) {
 
   if (playerMove === "rock") {
     if (computerMove === "rock") {
-      result = "tie.";
+      result = "TIE";
     } else if (computerMove === "paper") {
-      result = "you lose.";
+      result = "YOU LOOSE";
     } else if (computerMove === "scissors") {
-      result = "you win.";
+      result = "WIN!!";
     }
   } else if (playerMove === "paper") {
     if (computerMove === "rock") {
-      result = "you win.";
+      result = "WIN!!";
     } else if (computerMove === "paper") {
-      result = "tie.";
+      result = "TIE";
     } else if (computerMove === "scissors") {
-      result = "you lose.";
+      result = "YOU LOOSE";
     }
   } else if (playerMove === "scissors") {
     if (computerMove === "rock") {
-      result = "you lose.";
+      result = "YOU LOOSE";
     } else if (computerMove === "paper") {
-      result = "you win.";
+      result = "WIN!!";
     } else if (computerMove === "scissors") {
-      result = "tie.";
+      result = "TIE";
     }
   }
 
-  if (result === "you win.") {
+  if (result === "WIN!!") {
     score.wins += 1;
-  } else if (result === "you lose.") {
+  } else if (result === "YOU LOOSE") {
     score.losses += 1;
-  } else if (result === "tie.") {
+  } else if (result === "TIE") {
     score.ties += 1;
   }
 
   localStorage.setItem("score", JSON.stringify(score));
 
-  alert(
-    `you picked ${playerMove} and the computer picked ${computerMove}, so ${result}
-wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties}`
-  );
+  document.querySelector(".player-choice").innerHTML = `${playerMove}`;
+  document.querySelector(".computer-choice").innerHTML = `${computerMove}`;
+  document.querySelector(".result-choice").innerHTML = `${result}`;
+
+  updateScoreElement();
+}
+
+function updateScoreElement() {
+  document.querySelector(".win").innerHTML = `${score.wins}`;
+  document.querySelector(".loss").innerHTML = `${score.losses}`;
+  document.querySelector(".tie").innerHTML = `${score.ties}`;
 }
 
 function pickComputerMove() {
