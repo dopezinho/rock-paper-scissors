@@ -133,7 +133,8 @@ p {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    min-height: 110px;
     text-transform: lowercase;
 }
 
