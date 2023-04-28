@@ -23,10 +23,13 @@ function calcula() {
 
 function sinscreveBotaum() {
   const boutaoElemento = document.querySelector(".boutao");
+
   if (boutaoElemento.innerText === "Clica") {
     boutaoElemento.innerText = "o:";
+    boutaoElemento.classList.add("sub");
   } else {
     boutaoElemento.innerText = "Clica";
+    boutaoElemento.classList.remove("sub");
   }
 }
 
