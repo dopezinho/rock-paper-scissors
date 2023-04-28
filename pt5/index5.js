@@ -7,7 +7,7 @@ function renderPagina() {
 
   for (let i = 0; i < praFaze.length; i++) {
     const faze = praFaze[i];
-    const pagina = `<h3>${faze}</h3>`;
+    const pagina = `<h3>${faze}<button onclick="praFaze.splice(${i}, 1);renderPagina()">apagar</button></h3>`;
     praFazePagina += pagina;
   }
 
