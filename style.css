@@ -2,6 +2,7 @@
 
 * {
     background: #000;
+    /*background-image: url(/assets/capi.png);*/
     box-sizing: border-box;
     color: #fff;
     font-family: 'Raleway', sans-serif;
@@ -9,64 +10,38 @@
     padding: 0;
 }
 
-body {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-main {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-h1 {
-    font-size: 3rem;
-    margin: 10px 0 45px 0;
+header {
+    border-bottom: 2px solid #383535;
+    border-right: 3px solid #383535;
+    font-size: 2rem;
+    margin: 10px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
+header img {
+    width: 90%;
+}
+
 button {
-    background: #2d2d2d;
-    border: transparent;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin: 20px 5px;
-    min-width: 150px;
-    padding: 20px 10px;
+    font-size: 2rem;
 }
 
 button:hover {
-    background: #da6e6e;
-}
-
-img {
-    border: 1px solid #fff;
-    border-radius: 5px;
-    width: 70%;
-}
-
-input {
-    border-radius: 50px;
-    font-size: 1.5rem;
-    padding: 15px;
-    height: 70px;
+    background: #101010;
+    cursor: pointer;
 }
 
 footer {
     display: flex;
     text-align: center;
+    justify-content: space-around;
 }
 
 a {
     font-size: 1.5rem;
     font-weight: 300;
-    margin: 5px;
-    padding: 20px 10px;
+    margin: 0 5px;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -75,110 +50,29 @@ a:hover {
     color: #38e715;
 }
 
-p {
-    color: #c59dde;
-    font-weight: 600;
-    font-size: 2.3rem;
-}
+/* pt1 */
 
-/*  rock p & s buttons  */
-
-.rps-buttons {
-    display: flex;
-}
-
-/* YT BUTTON */
-
-.yt-button {
-    display: flex;
-    flex-direction: column;
-}
-
-.sub {
-    background-color: #ff0000;
-}
-
-/* RPS SCORE */
-
-.rps-buttons button {
-    background: transparent;
-    padding: 0;
-}
-
-.rps-buttons img {
-    border-radius: 50px;
-    padding: 20px;
-}
-
-.rps-buttons img:hover {
-    background: #da6e6e;
-}
-
-.player-choice img, .computer-choice img {
-    border-radius: 50px;
-    padding: 10px;
-    width: 50px;
-}
-
-.rps-match {
-    display: flex;
-    min-height: 80px;
-}
-
-.rps-match h2 {
-    margin: 10px 20px;
-}
-
-.player-match, .computer-match, .result-match {
+.pt1-container {
     align-items: center;
     display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    min-height: 110px;
-    text-transform: lowercase;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 150px 0;
 }
 
-.player-match h3, .computer-match h3, .result-match h3 {
-    font-size: 2.5rem;
-    font-weight: 500;
-}
-
-.rps-all {
-    display: flex;
-    text-transform: uppercase;
-}
-
-.rps-all h2 {
-    font-size: 1.5rem;
-    margin: 5px 20px;
-}
-
-.rps-wlt {
+.pt2-container {
     align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 100px 0px;
 }
 
-/*  CALCULERA  */
-
-.calculando {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.pt2-reset {
+    margin: 30px;
 }
 
-.calculando-total {
-    display: flex;
-}
-
-.calculando-total h2 {
-    margin: 10px 20px;
-}
-
-/*  Todo List  */
-
-
-/*  Webkit  */
+/*  Webkit */
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
