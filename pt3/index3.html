@@ -12,20 +12,20 @@
       <h1>Rock Paper Scissors pt3</h1>
     </header>
     <main>
-      <div class="rps-buttons">
+      <div>
         <button onclick="playGame('rock')">Rock</button>
         <button onclick="playGame('paper')">Paper</button>
         <button onclick="playGame('scissors')">Scissors</button>
-        <button
-          onclick="
-      score.wins = 0;
-      score.losses = 0;
-      score.ties = 0;
-      localStorage.removeItem('score')"
-        >
-          Reset Score
-        </button>
       </div>
+      <button
+        onclick="
+  score.wins = 0;
+  score.losses = 0;
+  score.ties = 0;
+  localStorage.removeItem('score')"
+      >
+        Reset Score
+      </button>
     </main>
     <footer>
       <a href="../pt2/index2.html">go to pt2</a>
