@@ -6,8 +6,9 @@ function renderPagina() {
   let praFazePagina = "";
 
   for (let i = 0; i < praFaze.length; i++) {
-    const faze = praFaze[i];
-    const pagina = `<h3>${faze}<button onclick="praFaze.splice(${i}, 1);renderPagina()">apagar</button></h3>`;
+    const fazeObj = praFaze[i];
+    const { nome, data } = fazeObj;
+    const pagina = `<h3>${nome} ${data}<button onclick="praFaze.splice(${i}, 1);renderPagina()">apagar</button></h3>`;
     praFazePagina += pagina;
   }
 
@@ -18,8 +19,13 @@ function adicionarFaze() {
   const inputNome = document.querySelector(".nome-input");
   const nome = inputNome.value;
 
-  praFaze.push(nome);
-  console.log(praFaze);
+  const inputData = document.querySelector(".data-input");
+  const data = inputData.value;
+
+  praFaze.push({
+    nome,
+    data,
+  });
 
   inputNome.value = "";
 

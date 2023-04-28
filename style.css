@@ -175,10 +175,17 @@ p {
     margin: 10px 20px;
 }
 
+/*  Todo List  */
+
+
 /*  Webkit  */
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
 }
