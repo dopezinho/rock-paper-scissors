@@ -52,7 +52,7 @@ function playGame(playerMove) {
     if (computerMove === "rock") {
       result = "TIE";
     } else if (computerMove === "paper") {
-      result = "YOU LOOSE";
+      result = "LOOSE";
     } else if (computerMove === "scissors") {
       result = "WIN!!";
     }
@@ -62,11 +62,11 @@ function playGame(playerMove) {
     } else if (computerMove === "paper") {
       result = "TIE";
     } else if (computerMove === "scissors") {
-      result = "YOU LOOSE";
+      result = "LOOSE";
     }
   } else if (playerMove === "scissors") {
     if (computerMove === "rock") {
-      result = "YOU LOOSE";
+      result = "LOOSE";
     } else if (computerMove === "paper") {
       result = "WIN!!";
     } else if (computerMove === "scissors") {
@@ -76,7 +76,7 @@ function playGame(playerMove) {
 
   if (result === "WIN!!") {
     score.wins += 1;
-  } else if (result === "YOU LOOSE") {
+  } else if (result === "LOOSE") {
     score.losses += 1;
   } else if (result === "TIE") {
     score.ties += 1;
@@ -84,8 +84,12 @@ function playGame(playerMove) {
 
   localStorage.setItem("score", JSON.stringify(score));
 
-  document.querySelector(".player-choice").innerHTML = `${playerMove}`;
-  document.querySelector(".computer-choice").innerHTML = `${computerMove}`;
+  document.querySelector(
+    ".player-choice"
+  ).innerHTML = `<img src="../assets/${playerMove}.svg">`;
+  document.querySelector(
+    ".computer-choice"
+  ).innerHTML = `<img src="../assets/${computerMove}.svg">`;
   document.querySelector(".result-choice").innerHTML = `${result}`;
 
   updateScoreElement();

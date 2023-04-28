@@ -100,6 +100,26 @@ p {
 
 /* RPS SCORE */
 
+.rps-buttons button {
+    background: transparent;
+    padding: 0;
+}
+
+.rps-buttons img {
+    border-radius: 50px;
+    padding: 20px;
+}
+
+.rps-buttons img:hover {
+    background: #da6e6e;
+}
+
+.player-choice img, .computer-choice img {
+    border-radius: 50px;
+    padding: 10px;
+    width: 50px;
+}
+
 .rps-match {
     display: flex;
     min-height: 80px;
@@ -118,8 +138,8 @@ p {
 }
 
 .player-match h3, .computer-match h3, .result-match h3 {
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 2.5rem;
+    font-weight: 500;
 }
 
 .rps-all {
