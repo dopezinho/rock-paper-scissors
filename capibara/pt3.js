@@ -24,11 +24,11 @@ function calcula() {
 function sinscreveBotaum() {
   const boutaoElemento = document.querySelector(".boutao");
 
-  if (boutaoElemento.innerText === "Clica") {
-    boutaoElemento.innerText = "o:";
+  if (boutaoElemento.innerText === "Subscribe") {
+    boutaoElemento.innerText = "Capivara";
     boutaoElemento.classList.add("sub");
   } else {
-    boutaoElemento.innerText = "Clica";
+    boutaoElemento.innerText = "Subscribe";
     boutaoElemento.classList.remove("sub");
   }
 }

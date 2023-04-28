@@ -51,7 +51,6 @@ a:hover {
 }
 
 /* pt1 */
-
 .pt1-container {
     align-items: center;
     display: flex;
@@ -60,6 +59,7 @@ a:hover {
     margin: 150px 0;
 }
 
+/* pt2 */
 .pt2-container {
     align-items: center;
     display: flex;
@@ -70,6 +70,65 @@ a:hover {
 
 .pt2-reset {
     margin: 30px;
+}
+
+/* pt3 */
+.sub {
+    background-color: #128dff27;
+}
+
+.sub-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+
+.rps-buttons {
+    display: flex;
+}
+
+.butt1:hover .icon1 {
+    background-color: #101010;
+}
+.butt2:hover .icon2 {
+    background-color: #101010;
+}
+.butt3:hover .icon3 {
+    background-color: #101010;
+}
+
+.rps-buttons img {
+    width: 60%;
+}
+
+.rps-buttons img:hover {
+    background: #101010;
+}
+
+.rps-match {
+    display: flex;
+    justify-content: space-around;
+    min-height: 80px;
+}
+
+.player-match, .computer-match, .result-match {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player-choice img, .computer-choice img {
+    height: 40px;
+}
+
+.rps-result {
+    align-items: center;
+    border-bottom: 2px solid #383535;
+    border-right: 3px solid #383535;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
 
 /*  Webkit */

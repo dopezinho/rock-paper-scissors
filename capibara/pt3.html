@@ -13,20 +13,18 @@
       <img src="../assets/DONz.png" alt="maduki" />
     </header>
     <main>
-      <p>YT Subs Butt:</p>
-      <div class="yt-button">
-        <button class="boutao" onclick="sinscreveBotaum()">Clica</button>
+      <div class="sub-button">
+        <button class="boutao" onclick="sinscreveBotaum()">Subscribe</button>
       </div>
-      <p>RPS Butts:</p>
       <div class="rps-buttons">
-        <button onclick="playGame('rock')">
-          <img src="../assets/rock.svg" />
+        <button onclick="playGame('rock')" class="butt1">
+          <img class="icon1" src="../assets/goku.png" />
         </button>
-        <button onclick="playGame('paper')">
-          <img src="../assets/paper.svg" />
+        <button onclick="playGame('paper')" class="butt2">
+          <img class="icon2" src="../assets/kuffy.png" />
         </button>
-        <button onclick="playGame('scissors')">
-          <img src="../assets/scissors.svg" />
+        <button onclick="playGame('scissors')" class="butt3">
+          <img class="icon3" src="../assets/sasuke.png" />
         </button>
       </div>
       <div class="rps-match">
@@ -43,7 +41,7 @@
           <h3 class="result-choice"></h3>
         </div>
       </div>
-      <div class="rps-all">
+      <div class="rps-result">
         <div class="rps-wlt">
           <h2>Win</h2>
           <h3 class="win"></h3>
@@ -56,17 +54,17 @@
           <h2>Tie</h2>
           <h3 class="tie"></h3>
         </div>
+        <button
+          onclick="
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+    localStorage.removeItem('score')
+    updateScoreElement()"
+        >
+          Reset Score
+        </button>
       </div>
-      <button
-        onclick="
-  score.wins = 0;
-  score.losses = 0;
-  score.ties = 0;
-  localStorage.removeItem('score')
-  updateScoreElement()"
-      >
-        Reset Score
-      </button>
       <p>Shipping Calculator</p>
       <div class="calculando">
         <input
