@@ -65,19 +65,22 @@
           Reset Score
         </button>
       </div>
-      <p>Shipping Calculator</p>
       <div class="calculando">
-        <input
-          placeholder="digita o balaio"
-          type="number"
-          class="custo-input"
-          onkeydown="calculaEnter(event)"
-        />
-        <button onclick="calcula()">Calculare</button>
-      </div>
-      <div class="calculando-total">
-        <h2>Total:</h2>
-        <h2 class="custo-total">$0</h2>
+        <h2>Shipping Calculator</h2>
+        <h3>price >= $40 = free shipping</h3>
+        <div class="calculando-custo">
+          <input
+            placeholder="digita o balaio"
+            type="number"
+            class="custo-input"
+            onkeydown="calculaEnter(event)"
+          />
+          <button onclick="calcula()">Calculare</button>
+        </div>
+        <div class="calculando-total">
+          <h3>Total:</h3>
+          <h3 class="custo-total">$0</h3>
+        </div>
       </div>
     </main>
     <footer>

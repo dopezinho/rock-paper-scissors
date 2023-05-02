@@ -14,8 +14,7 @@ header {
     border-bottom: 2px solid #383535;
     border-right: 3px solid #383535;
     font-size: 2rem;
-    margin: 10px 0;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -80,11 +79,15 @@ a:hover {
 .sub-button {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 10px;
     margin-right: 25px;
 }
 
+/* D.O.N. Rock Paper Scissors*/
 .rps-buttons {
+    align-items: center;
     display: flex;
+    justify-content: center;
 }
 
 .butt1:hover .icon1 {
@@ -128,8 +131,43 @@ a:hover {
     border-right: 3px solid #383535;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 200px;
+    margin-bottom: 30px;
     text-align: center;
+}
+
+/*  Shipping Calculator  */
+.calculando {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.calculando h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.calculando h3 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.calculando-custo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.custo-input {
+    border-right: 0px solid transparent;
+    padding: 10px;
+}
+
+.calculando-total {
+    display: flex;
+    margin-bottom: 20px;
 }
 
 /*  Webkit */
