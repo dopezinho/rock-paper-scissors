@@ -107,13 +107,12 @@ renderPagina();
 function renderPagina() {
   let praFazePagina = "";
 
-  for (let i = 0; i < praFaze.length; i++) {
-    const fazeObj = praFaze[i];
+  praFaze.forEach(function (fazeObj, index) {
     const { nome, data } = fazeObj;
-    const pagina = `<div class="lista-container"><h3>${nome}</h3> ${data}<button onclick="praFaze.splice(${i}, 1);renderPagina()">apagar</button>
+    const pagina = `<div class="lista-container"><h3>${nome}</h3> ${data}<button onclick="praFaze.splice(${index}, 1);renderPagina()">apagar</button>
     </div>`;
     praFazePagina += pagina;
-  }
+  });
 
   document.querySelector(".lista-prafz").innerHTML = praFazePagina;
 }
