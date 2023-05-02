@@ -48,17 +48,8 @@
           <h2>Tie</h2>
           <h3 class="tie"></h3>
         </div>
-        <button
-          onclick="
-    score.wins = 0;
-    score.losses = 0;
-    score.ties = 0;
-    localStorage.removeItem('score')
-    updateScoreElement()"
-        >
-          Reset
-        </button>
-        <button onclick="autoPlay()">Auto</button>
+        <button class="reset-button">Reset</button>
+        <button class="auto-button">Auto</button>
       </div>
       <div class="pt4-container">
         <div class="pt4-input">

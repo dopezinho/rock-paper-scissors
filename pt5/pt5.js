@@ -14,6 +14,18 @@ document.querySelector(".butt3").addEventListener("click", () => {
 
 /* RPS auto loop */
 
+document.querySelector(".auto-button").addEventListener("click", () => {
+  autoPlay();
+});
+
+document.querySelector(".reset-button").addEventListener("click", () => {
+  score.wins = 0;
+  score.losses = 0;
+  score.ties = 0;
+  localStorage.removeItem("score");
+  updateScoreElement();
+});
+
 let score = JSON.parse(localStorage.getItem("score")) || {
   wins: 0,
   losses: 0,
