@@ -1,19 +1,3 @@
-/*
-const buttonElement = document.querySelector(".home-button");
-
-const ouvindoEvento = () => {
-  console.log("click");
-};
-
-buttonElement.addEventListener("click", ouvindoEvento);
-
-buttonElement.removeEventListener("click", ouvindoEvento);
-
-buttonElement.addEventListener("click", () => {
-  console.log("click2");
-});
-*/
-
 /* Revisão Funções */
 
 /*

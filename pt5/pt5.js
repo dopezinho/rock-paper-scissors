@@ -1,4 +1,16 @@
-/* RPS buttons with addEventListener */
+/* play with keyboard */
+
+document.body.addEventListener("keydown", (event) => {
+  if (event.key === "r") {
+    playGame("rock");
+  } else if (event.key === "p") {
+    playGame("paper");
+  } else if (event.key === "s") {
+    playGame("scissors");
+  }
+});
+
+/* RPS buttons with addEventListener and arrow function */
 
 document.querySelector(".butt1").addEventListener("click", () => {
   playGame("rock");
@@ -12,7 +24,7 @@ document.querySelector(".butt3").addEventListener("click", () => {
   playGame("scissors");
 });
 
-/* RPS auto loop */
+/* RPS auto loop and arrow function */
 
 document.querySelector(".auto-button").addEventListener("click", () => {
   autoPlay();
