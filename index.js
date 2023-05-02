@@ -1,3 +1,19 @@
+/*
+const buttonElement = document.querySelector(".home-button");
+
+const ouvindoEvento = () => {
+  console.log("click");
+};
+
+buttonElement.addEventListener("click", ouvindoEvento);
+
+buttonElement.removeEventListener("click", ouvindoEvento);
+
+buttonElement.addEventListener("click", () => {
+  console.log("click2");
+});
+*/
+
 /* Revisão Funções */
 
 /*
@@ -62,16 +78,41 @@ console.log("intervalo2");
   console.log(value);
 });
 */
-
 /*
-["faze comida", "lava a louça", "assisti ytzin"].forEach(function (
-  value,
-  index
-) {
+["faze comida", "lava a louça", "assisti ytzin"].forEach((value, index) => {
   if (value === "lava a louça") {
     return;
   }
   console.log(index);
   console.log(value);
 });
+*/
+/*
+const regularFunction = function (param, param2) {
+  console.log("oiem");
+  return 5;
+};
+regularFunction();
+
+const arrowFunction = (param, param2) => {
+  console.log("oiem");
+  return 5;
+};
+arrowFunction();
+
+const oneParam = (param) => {
+  console.log(param + 1);
+};
+oneParam(2);
+
+const oneLine = () => 2 + 3;
+console.log(oneLine());
+*/
+/*
+const object2 = {
+  method: () => {
+
+  },
+  method() {} // easier to read
+}
 */

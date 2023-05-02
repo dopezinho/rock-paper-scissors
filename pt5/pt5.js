@@ -1,3 +1,17 @@
+/* RPS buttons with addEventListener */
+
+document.querySelector(".butt1").addEventListener("click", () => {
+  playGame("rock");
+});
+
+document.querySelector(".butt2").addEventListener("click", () => {
+  playGame("paper");
+});
+
+document.querySelector(".butt3").addEventListener("click", () => {
+  playGame("scissors");
+});
+
 /* RPS auto loop */
 
 let score = JSON.parse(localStorage.getItem("score")) || {
@@ -13,7 +27,7 @@ let intervalId;
 
 function autoPlay() {
   if (!isAutoPlaying) {
-    intervalId = setInterval(function () {
+    intervalId = setInterval(() => {
       const playerMove = pickComputerMove();
       playGame(playerMove);
     }, 1000);
@@ -107,7 +121,7 @@ renderPagina();
 function renderPagina() {
   let praFazePagina = "";
 
-  praFaze.forEach(function (fazeObj, index) {
+  praFaze.forEach((fazeObj, index) => {
     const { nome, data } = fazeObj;
     const pagina = `<div class="lista-container"><h3>${nome}</h3> ${data}<button onclick="praFaze.splice(${index}, 1);renderPagina()">apagar</button>
     </div>`;
