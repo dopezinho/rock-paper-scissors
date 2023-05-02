@@ -170,6 +170,47 @@ a:hover {
     margin-bottom: 20px;
 }
 
+/* pt4 */
+.pt4-title {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.pt4-title h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.pt4-container {
+    align-items: center;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.pt4-container input {
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+.pt4-container button {
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+.lista-prafz {
+    align-items: center;
+    border: 1px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-prafz h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
 /*  Webkit */
 
 input::-webkit-outer-spin-button,
