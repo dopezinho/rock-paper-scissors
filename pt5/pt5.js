@@ -144,7 +144,7 @@ function pickComputerMove() {
   return computerMove;
 }
 
-/* Todo List */
+/* Todo List with addEventListener */
 
 const praFaze = [];
 
@@ -153,15 +153,26 @@ renderPagina();
 function renderPagina() {
   let praFazePagina = "";
 
-  praFaze.forEach((fazeObj, index) => {
+  praFaze.forEach((fazeObj) => {
     const { nome, data } = fazeObj;
-    const pagina = `<div class="lista-container"><h3>${nome}</h3> ${data}<button onclick="praFaze.splice(${index}, 1);renderPagina()">apagar</button>
+    const pagina = `<div class="lista-container"><h3>${nome}</h3> ${data}<button class="delete-button">apagar</button>
     </div>`;
     praFazePagina += pagina;
   });
 
   document.querySelector(".lista-prafz").innerHTML = praFazePagina;
+
+  document.querySelectorAll(".delete-button").forEach((deleteButton, index) => {
+    deleteButton.addEventListener("click", () => {
+      praFaze.splice(index, 1);
+      renderPagina();
+    });
+  });
 }
+
+document.querySelector(".add-button").addEventListener("click", () => {
+  adicionarFaze();
+});
 
 function adicionarFaze() {
   const inputNome = document.querySelector(".nome-input");
