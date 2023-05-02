@@ -184,12 +184,9 @@ a:hover {
     font-weight: 400;
 }
 
-.pt4-container {
-    align-items: center;
+.pt4-input {
     display: flex;
-    font-size: 2rem;
     justify-content: center;
-    margin-bottom: 20px;
 }
 
 .pt4-container input {
@@ -204,10 +201,18 @@ a:hover {
 
 .lista-prafz {
     align-items: center;
-    border: 1px solid #ffffff;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     margin-bottom: 20px;
+}
+
+.lista-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    width: 90%;
 }
 
 .lista-prafz h3 {

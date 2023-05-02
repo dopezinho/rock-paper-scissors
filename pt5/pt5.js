@@ -110,7 +110,8 @@ function renderPagina() {
   for (let i = 0; i < praFaze.length; i++) {
     const fazeObj = praFaze[i];
     const { nome, data } = fazeObj;
-    const pagina = `<h3>${nome} ${data}<button onclick="praFaze.splice(${i}, 1);renderPagina()">apagar</button></h3>`;
+    const pagina = `<div class="lista-container"><h3>${nome}</h3> ${data}<button onclick="praFaze.splice(${i}, 1);renderPagina()">apagar</button>
+    </div>`;
     praFazePagina += pagina;
   }
 
