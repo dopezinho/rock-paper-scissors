@@ -7,6 +7,10 @@ document.body.addEventListener("keydown", (event) => {
     playGame("paper");
   } else if (event.key === "s") {
     playGame("scissors");
+  } else if (event.key === "c") {
+    cleanBoard();
+  } else if (event.key === " ") {
+    autoPlay();
   }
 });
 
@@ -31,12 +35,16 @@ document.querySelector(".auto-button").addEventListener("click", () => {
 });
 
 document.querySelector(".reset-button").addEventListener("click", () => {
+  cleanBoard();
+});
+
+cleanBoard = () => {
   score.wins = 0;
   score.losses = 0;
   score.ties = 0;
   localStorage.removeItem("score");
   updateScoreElement();
-});
+};
 
 let score = JSON.parse(localStorage.getItem("score")) || {
   wins: 0,
