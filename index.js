@@ -100,3 +100,31 @@ const object2 = {
   method() {} // easier to read
 }
 */
+
+// .filter() and .map()
+
+// hard
+console.log(
+  [1, -3, 5].filter((value, index) => {
+    if (value >= 0) {
+      return true;
+    } else {
+      return false;
+    }
+  })
+);
+// clean
+console.log(
+  [1, -3, 5].filter((value, index) => {
+    return value >= 0;
+  })
+);
+
+// hard
+console.log(
+  [1, 1, 3].map((value, index) => {
+    return value * 2;
+  })
+);
+// clean
+console.log([1, 1, 3].map((value) => value * 2));
