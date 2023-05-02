@@ -52,3 +52,13 @@ setInterval(function () {
 
 console.log("intervalo2");
 */
+
+/*
+["faze comida", "lava a louça", "assisti ytzin"].forEach(function (
+  value,
+  index
+) {
+  console.log(index);
+  console.log(value);
+});
+*/
