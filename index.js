@@ -101,6 +101,7 @@ const object2 = {
 }
 */
 
+/*
 // .filter() and .map()
 
 // hard
@@ -128,3 +129,4 @@ console.log(
 );
 // clean
 console.log([1, 1, 3].map((value) => value * 2));
+*/
