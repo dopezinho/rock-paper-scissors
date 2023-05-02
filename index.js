@@ -62,3 +62,16 @@ console.log("intervalo2");
   console.log(value);
 });
 */
+
+/*
+["faze comida", "lava a louça", "assisti ytzin"].forEach(function (
+  value,
+  index
+) {
+  if (value === "lava a louça") {
+    return;
+  }
+  console.log(index);
+  console.log(value);
+});
+*/
