@@ -13,6 +13,23 @@
       <h1>ARRAYS</h1>
     </header>
     <main>
+      <div class="calculando">
+        <h2>Shipping Calculator</h2>
+        <h3>price >= $40 = free shipping</h3>
+        <div class="calculando-custo">
+          <input
+            placeholder="digita o balaio"
+            type="number"
+            class="custo-input"
+            onkeydown="calculaEnter(event)"
+          />
+          <button onclick="calcula()">Calculare</button>
+        </div>
+        <div class="calculando-total">
+          <h3>Total:</h3>
+          <h3 class="custo-total">$0</h3>
+        </div>
+      </div>
       <div class="pt4-title">
         <h2>Listinham</h2>
       </div>
