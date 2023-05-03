@@ -18,7 +18,7 @@ header {
 }
 
 header img {
-    width: 90%;
+    max-width: 90%;
 }
 
 button {
@@ -58,7 +58,7 @@ a:hover {
 }
 
 .bg-img {
-    width: 90%;
+    max-width: 90%;
 }
 
 /* pt2 */
@@ -144,6 +144,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 40px 0;
 }
 
 .calculando h2 {
@@ -153,14 +154,13 @@ a:hover {
 
 .calculando h3 {
     font-size: 1rem;
-    margin-bottom: 20px;
 }
 
 .calculando-custo {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .custo-input {
@@ -191,7 +191,9 @@ a:hover {
 
 .pt4-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .pt4-container input {
@@ -223,6 +225,17 @@ a:hover {
 .lista-prafz h3 {
     font-size: 2rem;
     font-weight: 400;
+}
+
+/* Media Queries*/
+
+@media screen and (min-width: 1200px) {
+    header img {
+        width: 60%;
+    }
+    .bg-img {
+        max-width: 40%;
+    }
 }
 
 /*  Webkit */
