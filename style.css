@@ -189,6 +189,11 @@ a:hover {
     justify-content: center;
 }
 
+.pt4-container {
+    display: flex;
+    justify-content: center;
+}
+
 .pt4-container input {
     font-size: 1.1rem;
     padding: 5px;
