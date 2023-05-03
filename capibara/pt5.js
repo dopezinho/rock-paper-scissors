@@ -70,6 +70,18 @@ function autoPlay() {
   }
 }
 
+function clearBg() {
+  const boutaoClear = document.querySelector(".auto-button");
+
+  if (boutaoClear.innerText === "Auto") {
+    boutaoClear.innerText = "ON";
+    boutaoClear.classList.add("auto-button-after");
+  } else {
+    boutaoClear.innerText = "Auto";
+    boutaoClear.classList.remove("auto-button-after");
+  }
+}
+
 function playGame(playerMove) {
   const computerMove = pickComputerMove();
 

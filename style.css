@@ -23,6 +23,7 @@ header img {
 
 button {
     font-size: 2rem;
+    min-width: 180px;
 }
 
 button:hover {
@@ -229,6 +230,14 @@ a:hover {
 
 .key-text {
     margin: 0px 0px 30px 20px;
+}
+
+.auto-button-after {
+    background-color: #101010;
+}
+
+.auto-button-after:hover {
+    background-color: #000;
 }
 
 /* Media Queries*/
