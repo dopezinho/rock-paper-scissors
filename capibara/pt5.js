@@ -70,6 +70,10 @@ function autoPlay() {
   }
 }
 
+document.querySelector(".auto-button").addEventListener("click", () => {
+  clearBg();
+});
+
 function clearBg() {
   const boutaoClear = document.querySelector(".auto-button");
 
