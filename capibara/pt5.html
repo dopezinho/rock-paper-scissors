@@ -4,26 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../assets/capybara-icon.svg" />
     <link rel="stylesheet" href="../style.css" />
-    <title>D.O.Minique</title>
+    <title>Advanced Functions</title>
   </head>
   <body>
-    <header>
-      <img src="../assets/DONz.png" alt="maduki" />
-    </header>
+    <header></header>
     <main>
-      <div class="sub-button">
-        <button class="boutao" onclick="sinscreveBotaum()">Subscribe</button>
-      </div>
       <div class="rps-buttons">
-        <button onclick="playGame('rock')" class="butt1">
+        <button class="butt1">
           <img class="icon1" src="../assets/goku.png" />
         </button>
-        <button onclick="playGame('paper')" class="butt2">
+        <button class="butt2">
           <img class="icon2" src="../assets/kuffy.png" />
         </button>
-        <button onclick="playGame('scissors')" class="butt3">
+        <button class="butt3">
           <img class="icon3" src="../assets/sasuke.png" />
         </button>
       </div>
@@ -54,42 +48,24 @@
           <h2>Tie</h2>
           <h3 class="tie"></h3>
         </div>
-        <button
-          onclick="
-    score.wins = 0;
-    score.losses = 0;
-    score.ties = 0;
-    localStorage.removeItem('score')
-    updateScoreElement()"
-        >
-          Reset Score
-        </button>
+        <button class="reset-button">Reset</button>
+        <button class="auto-button">Auto</button>
       </div>
-      <div class="calculando">
-        <h2>Shipping Calculator</h2>
-        <h3>price >= $40 = free shipping</h3>
-        <div class="calculando-custo">
-          <input
-            placeholder="digita o balaio"
-            type="number"
-            class="custo-input"
-            onkeydown="calculaEnter(event)"
-          />
-          <button onclick="calcula()">Calculare</button>
-        </div>
-        <div class="calculando-total">
-          <h3>Total:</h3>
-          <h3 class="custo-total">$0</h3>
-        </div>
+      <div class="pt4-container">
+        <div class="pt4-input">
+        <input type="text" placeholder="precisa fz oq?" class="nome-input" />
+        <input type="date" class="data-input" />
+        <button class="add-button">Adicionar</button>
       </div>
+      <div class="lista-prafz"></div>
     </main>
     <footer>
       <a href="./pt1.html">go to pt1</a>
       <a href="./pt2.html">go to pt2</a>
+      <a href="./pt3.html">go to pt3</a>
       <a href="./pt4.html">go to pt4</a>
-      <a href="./pt5.html">go to pt5</a>
       <a href="../index.html">go home</a>
     </footer>
-    <script src="./pt3.js"></script>
+    <script src="./pt5.js"></script>
   </body>
 </html>
