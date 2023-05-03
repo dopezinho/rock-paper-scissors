@@ -6,7 +6,7 @@ function sinscreveBotaum() {
   const boutaoElemento = document.querySelector(".boutao");
 
   if (boutaoElemento.innerText === "Subscribe") {
-    boutaoElemento.innerText = "Capivara";
+    boutaoElemento.innerText = "Capibara";
     boutaoElemento.classList.add("sub");
   } else {
     boutaoElemento.innerText = "Subscribe";
